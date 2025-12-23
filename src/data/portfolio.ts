@@ -79,6 +79,14 @@ export const portfolioData = {
             github: "https://github.com/Amanyadav207/portfolio.",
             featured: false,
         },
+        {
+            id: 5,
+            title: "Conflux",
+            tagline: "Real-Time Collaborative Code Editor",
+            description: "A real-time collaborative code editor built for low-latency multi-user editing. Implemented CRDT-based synchronization (Yjs) and WebSockets for conflict-free concurrent edits.",
+            techStack: ["Node.js", "WebSocket", "React", "Yjs", "Monaco Editor"],
+            featured: true,
+        },
     ],
     social: {
         github: "https://github.com/Amanyadav207",
