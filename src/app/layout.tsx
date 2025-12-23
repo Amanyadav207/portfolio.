@@ -27,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white selection:bg-purple-500/30 selection:text-white`}
       >
         <div className="fixed inset-0 z-[-1] aurora-bg pointer-events-none" />
