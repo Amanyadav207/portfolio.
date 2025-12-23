@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  /* Midnight Aurora Theme */
+  --background: #000000;
+  --foreground: #ffffff;
+
+  /* Sophisticated Accents */
+  --primary: #5b21b6;
+  /* Deep Violet */
+  --secondary: #0ea5e9;
+  /* Sky Blue */
+  --accent: #10b981;
+  /* Emerald */
+
+  --sidebar-width: 300px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  antialias: subpixel-antialiased;
+}
+
+/* Fluid Aurora Background Utility */
+@layer utilities {
+  .aurora-bg {
+    background:
+      radial-gradient(circle at 50% 50%, rgba(91, 33, 182, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 100% 0%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 0% 100%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+    background-size: 150% 150%;
+    animation: aurora 20s ease-in-out infinite alternate;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* More subtle border */
+    border-radius: 1rem;
+  }
+
+  .glow-hover {
+    transition: all 0.3s ease;
+  }
+
+  .glow-hover:hover {
+    box-shadow: 0 0 30px -5px rgba(91, 33, 182, 0.3);
+    border-color: rgba(91, 33, 182, 0.5);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500;
+  }
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
