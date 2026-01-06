@@ -33,7 +33,7 @@ export default function Navbar() {
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                     <Link href="/" className="text-2xl font-bold tracking-tighter text-white hover:text-primary transition-colors">
-                        Portfolio<span className="text-primary">.</span>
+                        Aman<span className="text-primary">.</span>
                     </Link>
 
                     {/* Desktop Nav */}

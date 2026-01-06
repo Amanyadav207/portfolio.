@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Twitter, FileText, Terminal } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { portfolioData } from "@/data/portfolio";
 
 export default function Hero() {
     return (
@@ -20,9 +21,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="text-left"
                 >
-                    <div className="inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8">
-                        <span className="text-sm font-medium text-blue-400">Available for freelance & full-time</span>
-                    </div>
+
 
                     <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.95] mb-8 text-white">
                         Aman <br />
@@ -38,10 +37,22 @@ export default function Hero() {
                             Check my work
                         </Button>
 
+                        {portfolioData.social.resume && (
+                            <a href={portfolioData.social.resume} target="_blank" rel="noopener noreferrer">
+                                <Button className="h-14 px-8 rounded-full text-lg bg-white/10 text-white hover:bg-white/20 hover:scale-105 transition-all border border-white/10">
+                                    <FileText className="mr-2 w-5 h-5" />
+                                    Resume
+                                </Button>
+                            </a>
+                        )}
+
                         <div className="flex gap-4 px-6 border-l border-white/10 ml-2">
-                            <SocialLink href="https://github.com/Amanyadav207" icon={<Github size={20} />} />
-                            <SocialLink href="https://www.linkedin.com/in/amanYadav207/" icon={<Linkedin size={20} />} />
-                            <SocialLink href="https://x.com/AmanYadav207" icon={<Twitter size={20} />} />
+                            <SocialLink href={portfolioData.social.github} icon={<Github size={20} />} />
+                            <SocialLink href={portfolioData.social.linkedin} icon={<Linkedin size={20} />} />
+                            <SocialLink href={portfolioData.social.twitter} icon={<Twitter size={20} />} />
+                            {portfolioData.social.codeforces && (
+                                <SocialLink href={portfolioData.social.codeforces} icon={<Terminal size={20} />} />
+                            )}
                         </div>
                     </div>
                 </motion.div>

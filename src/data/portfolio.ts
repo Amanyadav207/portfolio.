@@ -93,5 +93,8 @@ export const portfolioData = {
         linkedin: "https://www.linkedin.com/in/amanYadav207/",
         twitter: "https://x.com/AmanYadav207",
         email: "amanyadav130904@gmail.com",
+        resume: "https://drive.google.com/file/d/19H_gZDGwQ4q9adZqHycr1x39hKmxLjYF/view?usp=sharing",
+        codeforces: "https://codeforces.com/profile/amanyadav130904",
     }
 };
+
