@@ -42,17 +42,17 @@ export const portfolioData = {
         },
     ],
     projects: [
+        // {
+        //     id: 1,
+        //     title: "Ticker360",
+        //     tagline: "Financial Analysis Platform",
+        //     description: "Real-time financial data processing engine with AI-driven insights. Handles complex data visualization and provides instant market analysis.",
+        //     techStack: ["Golang", "Next.js", "Python", "GenAI", "DigitalOcean"],
+        //     live: "https://ticker360.io",
+        //     featured: true,
+        // },
         {
             id: 1,
-            title: "Ticker360",
-            tagline: "Financial Analysis Platform",
-            description: "Real-time financial data processing engine with AI-driven insights. Handles complex data visualization and provides instant market analysis.",
-            techStack: ["Golang", "Next.js", "Python", "GenAI", "DigitalOcean"],
-            live: "https://ticker360.io",
-            featured: true,
-        },
-        {
-            id: 2,
             title: "CraveStream",
             tagline: "Vertical Video Feed",
             description: "A TikTok-style video discovery feed engineered for engagement. Features JWT-based secure auth, RBAC for creators/users, and optimized video streaming via ImageKit.",
@@ -62,7 +62,7 @@ export const portfolioData = {
             featured: true,
         },
         {
-            id: 3,
+            id: 2,
             title: "Sheetguard",
             tagline: "Schema-Aware ETL Pipeline",
             description: "A robust ETL engine that ingests Google Sheets data into PostgreSQL. Implements schema validation, deduplication, and dead-letter queues (DLQ) for fault-tolerant data pipelines.",
@@ -71,7 +71,7 @@ export const portfolioData = {
             featured: true,
         },
         {
-            id: 4,
+            id: 3,
             title: "Portfolio V3",
             tagline: "System Architecture Identity",
             description: "My personal developer identity site featuring a custom 'Midnight Aurora' theme, scrollytelling narratives, and Next.js 15 performance optimizations.",
@@ -80,7 +80,7 @@ export const portfolioData = {
             featured: false,
         },
         {
-            id: 5,
+            id: 4,
             title: "Conflux",
             tagline: "Real-Time Collaborative Code Editor",
             description: "A real-time collaborative code editor built for low-latency multi-user editing. Implemented CRDT-based synchronization (Yjs) and WebSockets for conflict-free concurrent edits.",
