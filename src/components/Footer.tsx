@@ -16,7 +16,7 @@ export default function Footer() {
                     <a href={portfolioData.social.github} target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-primary transition-colors"><Github className="w-5 h-5" /></a>
                     <a href={portfolioData.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-primary transition-colors"><Linkedin className="w-5 h-5" /></a>
                     <a href={portfolioData.social.twitter} target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-primary transition-colors"><Twitter className="w-5 h-5" /></a>
-                    <a href={`mailto:${portfolioData.social.email}`} className="text-white/60 hover:text-primary transition-colors"><Mail className="w-5 h-5" /></a>
+                    <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${portfolioData.social.email}`} target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-primary transition-colors"><Mail className="w-5 h-5" /></a>
                 </div>
 
                 <p className="text-xs text-white/30 md:ml-auto">

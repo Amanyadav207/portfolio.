@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { Mail, ArrowRight } from "lucide-react";
+import { portfolioData } from "@/data/portfolio";
 
 export default function Contact() {
     return (
@@ -21,7 +22,7 @@ export default function Contact() {
                             If you're looking for a developer to help bring your ideas to life, let's connect.
                         </p>
 
-                        <a href="mailto:amanyadav130904@gmail.com">
+                        <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${portfolioData.social.email}`} target="_blank" rel="noopener noreferrer">
                             <Button size="lg" className="text-lg px-10 py-6">
                                 <Mail className="mr-3 w-5 h-5" />
                                 Say Hello
