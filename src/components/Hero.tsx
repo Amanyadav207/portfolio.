@@ -33,9 +33,11 @@ export default function Hero() {
                     </p>
 
                     <div className="flex flex-wrap gap-4 items-center">
-                        <Button className="h-14 px-8 rounded-full text-lg bg-white text-black hover:bg-white/90 hover:scale-105 transition-all shadow-xl shadow-white/10">
-                            Check my work
-                        </Button>
+                        <a href="#projects">
+                            <Button className="h-14 px-8 rounded-full text-lg bg-white text-black hover:bg-white/90 hover:scale-105 transition-all shadow-xl shadow-white/10">
+                                Check my work
+                            </Button>
+                        </a>
 
                         {portfolioData.social.resume && (
                             <a href={portfolioData.social.resume} target="_blank" rel="noopener noreferrer">
